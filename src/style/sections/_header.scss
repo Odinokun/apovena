@@ -1,6 +1,12 @@
 .header {
   background-color: $highlight;
 }
+.header-sm {
+  padding-bottom: 40px;
+  @include max(425) {
+    padding-bottom: 25px;
+  }
+}
 
 .header-top {
   display: flex;

@@ -8,7 +8,7 @@ $(document).ready(function ($) {
     '05',
     '04',
     '03',
-    '02',
+    'example',
     'index'
     ]);
 });

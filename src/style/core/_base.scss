@@ -97,3 +97,32 @@ img:not([alt]) {
   margin: 0 auto;
   padding: 0 30px;
 }
+
+.btn {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 38px;
+  display: block;
+  width: 100%;
+  max-width: 222px;
+  height: 42px;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: .5s;
+  text-align: center;
+  text-decoration: none;
+  color: #3a3934;
+  border: 2px solid #5a5a5a;
+  background-color: transparent;
+
+  @include max(425) {
+    font-size: 15px;
+    line-height: 30px;
+    max-width: 179px;
+    height: 34px;
+  }
+
+  &:hover {
+    background-color: #fff;
+  }
+}
