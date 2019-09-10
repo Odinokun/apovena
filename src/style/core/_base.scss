@@ -1,0 +1,99 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: $font;
+  font-size: 16px;
+  line-height: 1.38;
+  color: $dark;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0 0 10px 0;
+}
+
+input,
+textarea,
+select,
+button {
+  border-radius: 0 !important;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+input.error,
+textarea.error {
+  border-color: #ed1b24 !important;
+  background: #fbd1d3 !important;
+}
+
+svg {
+  display: block;
+  overflow: visible;
+}
+
+// подсвечиваем картинки без alt и без заполненного alt
+img[alt=''],
+img:not([alt]) {
+  outline: 5px solid tomato;
+}
+
+// исключение для google-map и fancybox
+.fancybox-container img[alt=''],
+.fancybox-container img:not([alt]),
+.gm-style img[alt=''],
+.gm-style img:not([alt]) {
+  outline: none !important;
+}
+
+.main-wrap {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100vh;
+
+  //свойство для плавной прокрутки на яблоках
+
+  -webkit-overflow-scrolling: touch;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}

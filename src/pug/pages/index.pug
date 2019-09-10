@@ -1,0 +1,51 @@
+extends ../_template
+
+block variables
+  - var title       = 'Apovena'
+  - var description = 'Apovena'
+  - var ogtitle     = 'Apovena'
+
+block content
+  .main-wrap
+    include ../sections/header
+
+    //begin content
+    section.main
+      //begin three-images
+      .three-images
+        .three-images__item
+          img(src="assets/img/three-image-01.jpg" alt="picture")
+        .three-images__item
+          img(src="assets/img/three-image-02.jpg" alt="picture")
+        .three-images__item
+          img(src="assets/img/three-image-03.jpg" alt="picture")
+      //end three-images
+        
+      include ../sections/index-fly
+        
+      //begin index-bottom
+      .index-bottom
+        .container
+          h2.index-bottom__title So könnte Ihr Online-Auftritt aussehen
+          a(href="#").index-bottom__btn mehr erfahren
+          .index-bottom__img
+            img(src="assets/img/bg-index-bottom.jpg" alt="picture")
+      //end index-bottom
+        
+      //begin index-blockquote
+      .index-blockquote
+        .container
+          blockquote
+            span.index-blockquote__01 „Ich bin seit Juni 2019 bei Apovena
+            =' '
+            span.index-blockquote__02 und habe ein sehr gutes Feedback
+            =' '
+            span.index-blockquote__03 von meinen Kunden.“
+          span.index-blockquote_sign
+            | Florian Wehrenpfennig,
+            br
+            | Rathaus Apotheke Sankt Augustin
+      //end index-blockquote
+    //end content
+
+    include ../sections/footer
