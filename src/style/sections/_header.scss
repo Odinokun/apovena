@@ -28,6 +28,7 @@
   z-index: 15;
   text-decoration: none;
   color: $dark;
+
   @include max(425) {
     display: none;
   }
@@ -91,10 +92,32 @@
   z-index: 15;
   margin-left: 15px;
   cursor: pointer;
+  &.active {
+    .header-top__burger-icon {
+      display: none;
+    }
+
+    .header-top__burger-icon-active {
+      display: block;
+    }
+  }
+}
+
+.header-top__burger-icon {
   svg {
     fill: $dark;
     width: 30px;
     height: 30px;
+  }
+}
+
+.header-top__burger-icon-active {
+  display: none;
+
+  svg {
+    fill: $dark;
+    width: 25px;
+    height: 25px;
   }
 }
 

@@ -34,4 +34,7 @@
   font-weight: 400;
   text-decoration: none;
   color: #fff;
+  &:hover {
+    text-decoration: underline;
+  }
 }
