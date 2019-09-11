@@ -8,8 +8,13 @@ header.header
       input(type='submit' value='search').header-top__search-btn
       .header-top__search-svg
         +svg('magnific')
-    .header-top__burger
-      +svg('burger')
+    .header-top__burger#header-top__burger
+      .header-top__burger-icon
+        +svg('burger')
+      .header-top__burger-icon-active
+        +svg('close')
+
+    include menu
   //end header-top
 
   .container

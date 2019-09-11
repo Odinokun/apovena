@@ -1,14 +1,17 @@
 .header {
   background-color: $highlight;
 }
+
 .header-sm {
   padding-bottom: 40px;
+
   @include max(425) {
     padding-bottom: 25px;
   }
 }
 
 .header-top {
+  position: relative;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -22,6 +25,7 @@
 .header-top__link {
   font-size: 24px;
   font-weight: 500;
+  z-index: 15;
   text-decoration: none;
   color: $dark;
 
@@ -32,6 +36,7 @@
 
 .header-top__search {
   position: relative;
+  z-index: 15;
   display: flex;
   overflow: hidden;
   align-items: center;
@@ -84,11 +89,35 @@
 }
 
 .header-top__burger {
+  z-index: 15;
   margin-left: 15px;
+  cursor: pointer;
+  &.active {
+    .header-top__burger-icon {
+      display: none;
+    }
+
+    .header-top__burger-icon-active {
+      display: block;
+    }
+  }
+}
+
+.header-top__burger-icon {
   svg {
     fill: $dark;
     width: 30px;
     height: 30px;
+  }
+}
+
+.header-top__burger-icon-active {
+  display: none;
+
+  svg {
+    fill: $dark;
+    width: 25px;
+    height: 25px;
   }
 }
 
@@ -101,6 +130,7 @@
     max-width: 144px;
     margin: -15px auto 10px;
   }
+
   img {
     display: block;
     width: 100%;
@@ -116,6 +146,7 @@
   @include max(425) {
     margin-bottom: 10px;
   }
+
   img {
     display: block;
 
