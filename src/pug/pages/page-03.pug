@@ -1,0 +1,71 @@
+extends ../_template
+
+block variables
+  - var title       = 'Apovena'
+  - var description = 'Apovena'
+  - var ogtitle     = 'Apovena'
+
+block content
+  .main-wrap#main-wrap
+    include ../sections/header-sm
+
+    //begin content
+    section.main.page-03
+      //begin top-03
+      .page-03__top(style='background-image:url("assets/img/bg-top-03.jpg")')
+        .page-03__top-icons
+          .page-03__top-icon__01
+            +svg('cup')
+          .page-03__top-icon__02
+            img(src="assets/img/pillen.svg" alt="picture")
+
+      //end top-03
+
+      .page-03__text
+        .container
+          span.bold Die Konzeption und Erstellung der Beiträge für Apovena erfolgt von der medizinischen Fachredaktion der wdv-Mediengesellschaft. Wir haben langjährige Erfahrung im Apotheken-Markt und stimmen uns eng ab mit Informationsgebern aus Medizin und Pharmazie.
+          p Bei jedem Thema wird zunächst nach den journalistischen Kriterien Interesse und Aktualität entschieden. Die Auswahl erfolgt dann auf Grundlage des im Apotheken-Markt gängigen saisonalen Category-Managements. Auch Spezialgebiete wie Psychologie und Ernährung werden durch die entsprechende Ausbildung der Redaktion und das vorhandene Fachwissen abgedeckt. Anschließend durchlaufen die Texte eine medizinische Fachprüfung. Die orthographische Qualität ist durch ein Korrektorat sichergestellt. Die Schlussredaktion erfolgt in Zusammenarbeit mit einem Apotheker.
+
+      //begin page-03__blockquote
+      .page-03__blockquote
+        .container
+          blockquote
+            span.page-03__blockquote-01 „Die Inhalte orientieren sich an
+            =' '
+            span.page-03__blockquote-02 medizinischen Leitlinien
+            br
+            span.page-03__blockquote-03 und am aktuellen Stand
+            =' '
+            span.page-03__blockquote-04 der pharmazeutischen Praxis.“
+          span.page-03__blockquote-sign
+            | Barbara Döring,
+            br
+            | Head of Content Apovena
+      //end page-03__blockquote
+
+      .page-03__articles
+        .container
+          h3.page-03__articles-title Zielgruppe im Blick
+          p Ergänzend werden aktuelle Gesundheitsthemen mit öffentlichem Interesse aufgegriffen und mit Apothekenbezug aufbereitet. Durch die langjährige Tätigkeit im Apotheken- und Gesundheitsbereich kennt die Redaktion die Zielgruppe gut und versteht ihre Bedürfnisse.
+          h3.page-03__articles-title Alles läuft mühelos
+          p Für das neue digitale Marketing-Konzept sind die wdv-Gruppe und Amamedis, spezialisierter IT- und Marketinganbieter im Gesundheitssektor, eine enge Kooperation eingegangen. Der professionelle Content wird durch Topangebote von nicht verschreibungspflichtigen Medikamenten und persönlichen Tipps des Apothekers ergänzt. Die crossmediale Verknüpfung der Inhalte mit den verschiedenen digitalen Kanälen wie Website, Newsletter und Social Media läuft dabei weitgehend automatisiert.
+
+      .page-03__bottom
+        .container
+          .page-03__bottom-item.page-03__bottom-item-01
+            img(src="assets/img/page-03__bottom-01.jpg" alt="picture")
+            .circle
+              span Beispiele für medizinische Artikelteaser
+          .page-03__bottom-item.page-03__bottom-item-02
+            img(src="assets/img/page-03__bottom-02.jpg" alt="picture")
+          .page-03__bottom-item.page-03__bottom-item-03
+            img(src="assets/img/page-03__bottom-03.jpg" alt="picture")
+            .circle
+              span
+                | Beispiel für
+                br
+                | Ihr Angebot
+
+    //end content
+
+    include ../sections/footer

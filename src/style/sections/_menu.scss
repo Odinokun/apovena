@@ -21,12 +21,16 @@
 
 .menu__list {
   margin: 0;
-  padding: 0;
+  padding: 0 35px;
 }
 
 .menu__item {
   padding: 0;
   list-style: none;
+
+  @include max(767) {
+    margin-bottom: 15px;
+  }
 }
 
 .menu__link {
@@ -34,6 +38,10 @@
   font-weight: 400;
   text-decoration: none;
   color: #fff;
+
+  @include max(767) {
+    font-size: 28px;
+  }
   &:hover {
     text-decoration: underline;
   }

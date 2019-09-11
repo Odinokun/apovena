@@ -7,7 +7,7 @@ $(document).ready(function ($) {
   pageWidget([
     '05',
     '04',
-    '03',
+    'page-03',
     'example',
     'index'
     ]);
