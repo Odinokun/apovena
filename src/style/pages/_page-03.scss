@@ -1,6 +1,10 @@
 .page-03__top {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 620px;
+  padding: 40px 10px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -13,6 +17,26 @@
   }
   @include max(570) {
     min-height: 260px;
+  }
+}
+
+.page-03__title {
+  font-size: 56px;
+  font-weight: 400;
+  transform: translateY(60px);
+  text-align: center;
+  color: #d0021b;
+
+  @include max(768) {
+    font-size: 40px;
+  }
+  @include max(570) {
+    font-size: 29px;
+    margin-top: auto;
+    transform: translateY(0);
+  }
+  @include max(375) {
+    font-size: 26px;
   }
 }
 
@@ -31,6 +55,7 @@
   @include max(570) {
     right: 10px;
   }
+
   &::before {
     position: absolute;
     top: 70px;
@@ -70,6 +95,7 @@
     border: 3px solid #a40c0c;
     background-color: #fffefe;
   }
+
   svg {
     fill: #040608;
     width: 126px;
@@ -118,6 +144,7 @@
     padding-top: 65px;
     padding-bottom: 17px;
   }
+
   .container {
     max-width: 870px;
   }
@@ -242,6 +269,7 @@
   @include max(570) {
     padding-bottom: 50px;
   }
+
   .container {
     max-width: 870px;
   }
@@ -318,6 +346,7 @@
   @include max(570) {
     width: 138px;
   }
+
   .circle {
     position: absolute;
     bottom: -180px;
@@ -338,6 +367,7 @@
       width: 116px;
       height: 116px;
     }
+
     span {
       font-size: 24px;
       font-weight: 700;
@@ -418,6 +448,7 @@
       width: 116px;
       height: 116px;
     }
+
     span {
       font-size: 24px;
       font-weight: 700;
