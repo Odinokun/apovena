@@ -12,9 +12,11 @@
   @include max(1200) {
     min-height: 450px;
   }
+
   @include max(768) {
     min-height: 350px;
   }
+
   @include max(570) {
     min-height: 260px;
   }
@@ -30,11 +32,13 @@
   @include max(768) {
     font-size: 40px;
   }
+
   @include max(570) {
     font-size: 29px;
     margin-top: auto;
     transform: translateY(0);
   }
+
   @include max(375) {
     font-size: 26px;
   }
@@ -50,10 +54,12 @@
   @include max(1024) {
     top: -110px;
   }
+
   @include max(767) {
     top: -50px;
     left: 20px;
   }
+
   @include max(375) {
     top: -30px;
   }
@@ -74,6 +80,7 @@
       width: 60px;
       height: 60px;
     }
+
     @include max(767) {
       top: 85px;
       left: 55px;
@@ -102,6 +109,7 @@
     height: 150px;
     border: 3px solid #a40c0c;
   }
+
   @include max(767) {
     width: 99px;
     height: 99px;
@@ -119,6 +127,7 @@
       height: 50px;
       margin-right: 10px;
     }
+
     @include max(767) {
       width: 63px;
       height: 39px;
@@ -144,6 +153,7 @@
     width: 100px;
     height: 100px;
   }
+
   @include max(767) {
     top: 70px;
     width: 63px;
@@ -158,6 +168,7 @@
       width: 45px;
       height: 45px;
     }
+
     @include max(767) {
       width: 25px;
       height: 25px;
@@ -196,13 +207,25 @@
 
 .page-04__markers {
   padding-bottom: 115px;
-  background-image: url('../img/bg-markers.png');
+  background-image: url('../img/bg-markers-01.png'), url('../img/bg-markers-02.png');
   background-repeat: no-repeat;
-  background-position: 50% 50px;
+  background-position: 50% 100px;
   background-size: contain;
+
+  @include max(767) {
+    background-position: 50% 100px, 50% 450px;
+  }
 
   @include max(570) {
     padding-bottom: 60px;
+  }
+
+  @include max(425) {
+    background-position: 50% 150px, 50% 400px;
+  }
+
+  @include max(350) {
+    background-position: 50% 50px, 50% 350px;
   }
   .container {
     display: flex;
@@ -229,6 +252,7 @@
     width: 45%;
     max-width: 250px;
   }
+
   &:nth-child(1),
   &:nth-child(3) {
     margin-top: 70px;
@@ -272,15 +296,19 @@
   @include max(870) {
     min-height: 250px;
   }
+
   @include max(425) {
     min-height: 220px;
   }
+
   @include max(375) {
     min-height: 190px;
   }
+
   @include max(350) {
     min-height: 170px;
   }
+
   span {
     font-size: 122px;
     font-weight: 700;
@@ -301,20 +329,24 @@
       width: 140px;
       height: 140px;
     }
+
     @include max(570) {
       width: 130px;
       height: 130px;
     }
+
     @include max(425) {
       font-size: 70px;
       width: 120px;
       height: 120px;
       margin-top: 15px;
     }
+
     @include max(375) {
       width: 110px;
       height: 110px;
     }
+
     @include max(350) {
       font-size: 50px;
       width: 90px;
@@ -329,6 +361,7 @@
   @include max(570) {
     padding-bottom: 20px;
   }
+
   .container {
     max-width: 870px;
   }
