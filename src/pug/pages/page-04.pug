@@ -1,0 +1,87 @@
+extends ../_template
+
+block variables
+  - var title       = 'Apovena'
+  - var description = 'Apovena'
+  - var ogtitle     = 'Apovena'
+
+block content
+  .main-wrap#main-wrap
+    include ../sections/header-sm
+
+    //begin content
+    section.main.page-04
+      //begin top-04
+      .page-04__top(style='background-image:url("assets/img/bg-top-04.jpg")')
+        h2.page-04__title
+          | Vier gute Gründe
+          br
+          | für Apovena
+        .page-04__top-icons
+          .page-04__top-icon__01
+            +svg('medical-basket')
+          .page-04__top-icon__02
+            img(src="assets/img/moon.svg" alt="picture")
+      //end top-04
+
+      .page-04__text
+        .container
+          span.bold Die Konzeption und Erstellung der Beiträge für Apovena erfolgt von der medizinischen Fachredaktion der wdv-Mediengesellschaft. Wir haben langjährige Erfahrung im Apotheken-Markt und stimmen uns eng ab mit Informationsgebern aus Medizin und Pharmazie.
+
+      //begin page-04__markers
+      .page-04__markers
+        .container
+          a(href="#article-01").page-04__marker
+            .page-04__marker-inn
+              span 1
+            h3
+              | Umfassendes
+              br
+              | Digital-Konzept
+          a(href="#article-02").page-04__marker
+            .page-04__marker-inn
+              span 2
+            h3
+              | Rund um
+              br
+              | die Uhr
+          a(href="#article-03").page-04__marker
+            .page-04__marker-inn
+              span 3
+            h3
+              | Hohe
+              br
+              | Reichweite
+          a(href="#article-04").page-04__marker
+            .page-04__marker-inn
+              span 4
+            h3
+              | Kein
+              br
+              | zusätzlicher
+              br
+              | Aufwand
+      //end page-04__markers
+
+      //begin page-04__articles
+      .page-04__articles
+        .container
+          .page-04__article#article-01
+            h3.page-04__articles-title Umfassendes Digital-Konzept
+            p Ein innovatives System für Online-Marketing ist eine Investition in die Kundenbindung, die sich lohnt. So positionieren Sie sich gegenüber Ihren lokalen Wettbewerbern und der harten Online-Konkurrenz. Erweitern Sie die Reichweite Ihres Ladengeschäfts: Top-Lage und professioneller Service werden ergänzt durch Top-Online-Angebote und fundierte, aktuelle Informationen. Website, Newsletter, Social Media und SEO (Suchmaschinenoptimierung) bringen den Kunden an den virtuellen Schalter Ihrer Apotheke – und sorgen so für mehr Umsatz.
+
+          .page-04__article#article-02
+            h3.page-04__articles-title Rund um die Uhr
+            p Für Apotheker ist Vertrauen eine wichtige Währung. Apovena bietet geprüfte gesundheitliche Informationen und ist unsere vertrauensbildende Maßnahme für den Kunden im digitalen Bereich. Dazu wird der Kunde regelmäßig über die neuesten Angebote informiert und kann sie gleich online einkaufen.
+
+          .page-04__article#article-03
+            h3.page-04__articles-title Hohe Reichweite
+            p Jeden Monatsanfang wird Ihr Apovena-Newsletter als Push-Medium an Ihre Kunden versandt. Dazu veröffentlichen wir jede Woche zwei neue, wissenschaftlich geprüfte Beiträge auf der Homepage des Apothekers, die automatisch auch auf den Social-Media-Kanälen wie Facebook oder Instagram gepostet werden. Alle Artikel sind suchmaschinenoptimiert, damit kommen mehr Kunden über Suchmaschinen wie Google auf die Seite Ihrer Apotheke.
+
+          .page-04__article#article-04
+            h3.page-04__articles-title Kein zusätzlicher Aufwand
+            p Im Regelbetrieb müssen Sie nichts mehr machen. Website, Newsletter und Social-Media-Posts funktionieren automatisch.
+      //end page-04__articles
+    //end content
+
+    include ../sections/footer
