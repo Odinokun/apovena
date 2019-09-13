@@ -1,0 +1,367 @@
+.page-04__top {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 620px;
+  padding: 40px 10px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+
+  @include max(1200) {
+    min-height: 450px;
+  }
+  @include max(768) {
+    min-height: 350px;
+  }
+  @include max(570) {
+    min-height: 260px;
+  }
+}
+
+.page-04__title {
+  font-size: 56px;
+  font-weight: 400;
+  transform: translateY(60px);
+  text-align: center;
+  color: #d0021b;
+
+  @include max(768) {
+    font-size: 40px;
+  }
+  @include max(570) {
+    font-size: 29px;
+    margin-top: auto;
+    transform: translateY(0);
+  }
+  @include max(375) {
+    font-size: 26px;
+  }
+}
+
+.page-04__top-icons {
+  position: absolute;
+  top: -80px;
+  left: 40px;
+  width: 260px;
+  height: 361px;
+
+  @include max(1024) {
+    top: -110px;
+  }
+  @include max(767) {
+    top: -50px;
+    left: 20px;
+  }
+  @include max(375) {
+    top: -30px;
+  }
+
+  &::before {
+    position: absolute;
+    top: 198px;
+    left: 140px;
+    width: 95px;
+    height: 95px;
+    content: '';
+    border-radius: 50%;
+    background-color: #f00;
+
+    @include max(1024) {
+      top: 120px;
+      left: 80px;
+      width: 60px;
+      height: 60px;
+    }
+    @include max(767) {
+      top: 85px;
+      left: 55px;
+      width: 38px;
+      height: 38px;
+    }
+  }
+}
+
+.page-04__top-icon__01 {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 241px;
+  height: 241px;
+  border: 7px solid #a40c0c;
+  border-radius: 50%;
+  background-color: #fffefe;
+
+  @include max(1024) {
+    width: 150px;
+    height: 150px;
+    border: 3px solid #a40c0c;
+  }
+  @include max(767) {
+    width: 99px;
+    height: 99px;
+  }
+
+  svg {
+    fill: #040608;
+    width: 161px;
+    height: 99px;
+    margin-top: 20px;
+    margin-right: 20px;
+
+    @include max(1024) {
+      width: 110px;
+      height: 50px;
+      margin-right: 10px;
+    }
+    @include max(767) {
+      width: 63px;
+      height: 39px;
+      margin-top: 10px;
+    }
+  }
+}
+
+.page-04__top-icon__02 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 163px;
+  height: 163px;
+  border-radius: 50%;
+  background-color: rgba(218, 223, 231, .66);
+
+  @include max(1024) {
+    top: 120px;
+    width: 100px;
+    height: 100px;
+  }
+  @include max(767) {
+    top: 70px;
+    width: 63px;
+    height: 63px;
+  }
+
+  img {
+    width: 62px;
+    height: 62px;
+
+    @include max(1024) {
+      width: 45px;
+      height: 45px;
+    }
+    @include max(767) {
+      width: 25px;
+      height: 25px;
+    }
+  }
+}
+
+.page-04__text {
+  padding-top: 120px;
+  padding-bottom: 40px;
+
+  @include max(570) {
+    padding-top: 65px;
+    padding-bottom: 17px;
+  }
+
+  .container {
+    max-width: 870px;
+  }
+  .bold {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33px;
+    display: block;
+    margin-bottom: 70px;
+    text-align: center;
+    color: #3a3934;
+
+    @include max(570) {
+      font-size: 15px;
+      line-height: 20px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.page-04__markers {
+  padding-bottom: 115px;
+  background-image: url('../img/bg-markers.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50px;
+  background-size: contain;
+
+  @include max(570) {
+    padding-bottom: 60px;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 980px;
+
+    @include max(767) {
+      justify-content: space-around;
+      flex-wrap: wrap;
+      max-width: 600px;
+    }
+  }
+}
+
+.page-04__marker {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 24%;
+  text-align: center;
+  text-decoration: none;
+
+  @include max(767) {
+    width: 45%;
+    max-width: 250px;
+  }
+  &:nth-child(1),
+  &:nth-child(3) {
+    margin-top: 70px;
+
+    @include max(767) {
+      margin-top: 0;
+    }
+  }
+  &:nth-child(2) {
+    @include max(767) {
+      margin-top: 25px;
+    }
+  }
+  &:nth-child(4) {
+    @include max(767) {
+      margin-top: 50px;
+    }
+  }
+  h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    color: #3a3934;
+
+    @include max(570) {
+      font-size: 14px;
+      line-height: 16.67px;
+    }
+  }
+}
+
+.page-04__marker-inn {
+  display: block;
+  min-height: 312px;
+  margin-bottom: 20px;
+  background-image: url('../img/marker.png');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: contain;
+
+  @include max(870) {
+    min-height: 250px;
+  }
+  @include max(425) {
+    min-height: 220px;
+  }
+  @include max(375) {
+    min-height: 190px;
+  }
+  @include max(350) {
+    min-height: 170px;
+  }
+  span {
+    font-size: 122px;
+    font-weight: 700;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 181px;
+    height: 181px;
+    margin: 20px auto;
+    color: #d60c0c;
+    border: 4px solid #d0021b;
+    border-radius: 50%;
+    background-color: #fff;
+
+    @include max(870) {
+      font-size: 90px;
+      width: 140px;
+      height: 140px;
+    }
+    @include max(570) {
+      width: 130px;
+      height: 130px;
+    }
+    @include max(425) {
+      font-size: 70px;
+      width: 120px;
+      height: 120px;
+      margin-top: 15px;
+    }
+    @include max(375) {
+      width: 110px;
+      height: 110px;
+    }
+    @include max(350) {
+      font-size: 50px;
+      width: 90px;
+      height: 90px;
+    }
+  }
+}
+
+.page-04__articles {
+  padding-bottom: 160px;
+
+  @include max(570) {
+    padding-bottom: 20px;
+  }
+  .container {
+    max-width: 870px;
+  }
+}
+
+.page-04__article {
+  padding-bottom: 30px;
+  text-align: center;
+  p {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 33px;
+    display: inline-block;
+    margin-bottom: 30px;
+    color: #3a3934;
+
+    @include max(570) {
+      font-size: 15px;
+      line-height: 20px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.page-04__articles-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 33px;
+  margin-bottom: 5px;
+  color: #3a3934;
+
+  @include max(570) {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}

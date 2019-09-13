@@ -55,6 +55,9 @@
   @include max(570) {
     right: 10px;
   }
+  @include max(375) {
+    top: -30px;
+  }
 
   &::before {
     position: absolute;
