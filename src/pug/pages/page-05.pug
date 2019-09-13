@@ -1,0 +1,82 @@
+extends ../_template
+
+block variables
+  - var title       = 'Apovena'
+  - var description = 'Apovena'
+  - var ogtitle     = 'Apovena'
+
+block content
+  .main-wrap#main-wrap
+    include ../sections/header-sm
+
+    //begin content
+    section.main.page-05
+      //begin top-05
+      .page-05__top(style='background-image:url("assets/img/bg-top-05.jpg")')
+        h2.page-05__title
+          | Drei Medien,
+          br
+          | ein monatlicher Preis
+        .page-05__top-icons
+          .page-05__top-icon
+            +svg('percent')
+      //end top-05
+
+      //begin page-05__content
+      .page-05__content
+
+        .page-05__text
+          .container
+            span.bold Apovena organisiert alle notwendigen Schritte von der Planung bis zur Veröffentlichung. Als Apotheker brauchen Sie sich nur um wenige Details zu kümmern. Apovena macht es möglich, verschiedene Informationen zusammenzuführen und voll automatisiert auf die verschiedenen Medien zu verteilen.
+
+
+        //begin page-05__scheme
+        .page-05__scheme-wrap
+          .container
+            span.page-05__scheme-title So entstehen quasi ganz von allein:
+            .page-05__scheme
+              img(src="assets/img/scheme.jpg" alt="picture")
+            span.page-05__scheme-text
+              | Gerne erstellen wir Ihnen
+              br
+              |ein individuelles Angebot
+              br
+              | abhängig von der Anzahl
+              br
+              | Ihrer Apotheken und der Vertragslaufzeit.
+        //end page-05__scheme
+      //end page-05__content
+        
+      //begin page-05__bottom
+      .page-05__bottom#page-05__bottom
+        .container
+          //begin page-05-form
+          .page-05-form
+            h3.page-05-form__title Angebot anfragen
+            form
+              input.page-05-form__input(placeholder='Betreff')
+              input.page-05-form__input(placeholder='E-mail-Adresse')
+              textarea.page-05-form__textarea(placeholder='Text inkl. gewünschter Vertragslaufzeit und Anzahl der Apotheken')
+              input.page-05-form__submit.btn(type='submit' value='Send')
+          //end page-05-form
+          
+          //begin page-05-contacts
+          .page-05-contacts
+            .page-05-contacts__title
+              |Dirk Rogge
+              br
+              |Geschäftsführer
+            a(href="tel:034112881411").page-05-contacts__link Telefon: 0341 12881411
+            a(href="mailto:d.rogge@amamedis.de").page-05-contacts__link d.rogge@amamedis.de
+            a(href="#" target="_blank" rel="nofollow noopener noreferrer").page-05-contacts__link
+              | Amamedis GmbH
+              br
+              | Lützowstraße 11a
+              br
+              | 04155 Leipzig
+      //end page-05__bottom
+    //end page-05-contacts
+
+    //end content
+
+    include ../sections/footer

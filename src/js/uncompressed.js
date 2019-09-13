@@ -5,7 +5,7 @@
 
 $(document).ready(function ($) {
   pageWidget([
-    '05',
+    'page-05',
     'page-04',
     'page-03',
     'example',
